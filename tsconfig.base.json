@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@multi-step-form/design-system": ["libs/design-system/src/index.ts"],
+      "@multi-step-form/shared-components": [
+        "libs/shared-components/src/index.ts"
+      ],
+      "@multi-step-form/shared-hooks": ["libs/shared-hooks/src/index.ts"],
+      "@multi-step-form/shared-utils": ["libs/shared-utils/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,7 @@
+.aside {
+  @apply flex flex-col p-32 gap-24 justify-start;
+  background-image: url("../../assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  width: 274px;
+  min-height: 568px;
+}

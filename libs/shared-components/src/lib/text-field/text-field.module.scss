@@ -1,0 +1,23 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    @apply text-12 text-primary mb-4 font-regular inline-flex;
+  }
+
+  &__error {
+    @apply text-12 text-danger font-bold ml-auto;
+  }
+
+  &__input {
+    all: unset;
+    @apply border border-solid border-secondary rounded-md transition;
+    @apply text-14 text-primary p-10;
+    @apply focus:border-primary;
+  }
+
+  &--error &__input {
+    @apply border border-solid border-danger text-danger;
+  }
+}

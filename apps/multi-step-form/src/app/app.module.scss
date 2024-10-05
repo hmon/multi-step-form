@@ -1,0 +1,14 @@
+/* Your styles goes here. */
+.app {
+  @apply bg-body;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  @apply bg-white p-14 w-3/5 rounded-2xl flex flex-row;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}

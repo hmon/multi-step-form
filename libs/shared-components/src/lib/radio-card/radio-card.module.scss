@@ -1,0 +1,14 @@
+.radio-card {
+  &__input {
+    display: none;
+  }
+
+  &__card {
+    @apply flex flex-col border border-solid border-secondary rounded-md p-16 cursor-pointer transition;
+    @apply hover:border-tertiary;
+  }
+
+  &__input:checked + &__card {
+    @apply border-tertiary bg-tertiary bg-opacity-5;
+  }
+}

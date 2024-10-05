@@ -1,0 +1,10 @@
+.stepper {}
+
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}

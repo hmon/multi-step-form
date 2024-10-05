@@ -1,0 +1,34 @@
+.checkbox-card {
+  @apply w-full;
+
+  &__input {
+    display: none;
+  }
+
+  &__card {
+    @apply flex flex-row items-center border border-solid border-secondary rounded-md p-16 cursor-pointer transition;
+    @apply hover:border-tertiary;
+  }
+
+  &__button {
+    @apply flex items-center justify-center w-20 h-20 text-white;
+    @apply border border-solid border-secondary rounded-md mr-16;
+    pointer-events: none;
+
+    svg {
+      display: none;
+    }
+  }
+
+  &__input:checked + &__card {
+    @apply border-tertiary bg-tertiary bg-opacity-5;
+  }
+
+  &__input:checked + &__card > &__button {
+    @apply bg-secondary-accent;
+
+    svg {
+      display: block;
+    }
+  }
+}

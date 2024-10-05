@@ -1,0 +1,19 @@
+.switch {
+  all: unset;
+  @apply bg-primary rounded-max relative w-40 h-20;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &[data-state="checked"] {
+    @apply bg-primary;
+  }
+
+  &__thumb {
+    @apply block w-12 h-12 bg-white rounded-max shadow-md transition-transform;
+    transform: translateX(4px);
+    will-change: transform;
+
+    &[data-state="checked"] {
+      transform: translateX(24px);
+    }
+  }
+}

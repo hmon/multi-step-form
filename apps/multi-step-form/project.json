@@ -1,0 +1,9 @@
+{
+  "name": "multi-step-form",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/multi-step-form/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project multi-step-form --web",
+  "targets": {}
+}
